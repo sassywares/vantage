@@ -10,8 +10,8 @@ export default function Portfolio() {
         <div className="col-lg-6 col-xl-5 mb-md-40">
           <h2 className="section-title mb-40 mb-xs-30">Case Studies</h2>
           <p className="section-descr dark-white mb-0">
-            We help brands and businesses stand out in the changing digital
-            landscape.
+            See how our AI-powered solutions deliver measurable results for
+            leading brands.
           </p>
         </div>
         <div className="col-lg-6 offset-xl-1 d-flex align-items-end pb-10">

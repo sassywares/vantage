@@ -1,7 +1,38 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 export default function NewsLetter() {
+  async function onFormSubmit(e) {
+    e.preventDefault();
+
+    const email = e.target["newsletter-email"].value;
+
+    if (!email) {
+      alert("Please enter your email");
+      return;
+    }
+
+    alert(
+      "Thank you for subscribing, be prepared for new AI-powered marketing insights in your inbox every week."
+    );
+
+    try {
+      await fetch("https://api.sassywares.com/v1/newsletter", {
+        body: JSON.stringify({ email }),
+        method: "POST",
+        headers: {
+          "X-Source": "vantage-marketing-agency",
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <div className="row">
       <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 wow fadeInUp">
@@ -17,16 +48,12 @@ export default function NewsLetter() {
             </div>
             <div className="d-flex align-items-center">
               <h2 className="section-title-small w-100 mb-0">
-                Stay informed with our weekly newsletter.
+                Get AI marketing insights and updates.
               </h2>
             </div>
           </div>
         </div>
-        <form
-          onSubmit={(e) => e.preventDefault()}
-          id="mailchimp"
-          className="form"
-        >
+        <form onSubmit={onFormSubmit} id="mailchimp" className="form">
           <div className="d-sm-flex justify-content-between mb-3">
             <label htmlFor="newsletter-email" className="visually-hidden">
               Your email
@@ -46,16 +73,13 @@ export default function NewsLetter() {
               aria-controls="subscribe-result"
               className="newsletter-button btn btn-mod btn-color btn-large btn-round btn-hover-anim"
             >
-              <span>
-                Subscribe
-                <span className="d-none d-md-inline-block">Now</span>
-              </span>
+              <span>Get Insights</span>
             </button>
           </div>
           <div className="form-tip">
             <i className="icon-info size-16" /> By sending the form you agree to
-            the <a href="#">Terms &amp; Conditions</a> and{" "}
-            <a href="#">Privacy Policy</a>.
+            the <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>{" "}
+            and <Link href="/privacy-policy">Privacy Policy</Link>.
           </div>
           <div
             id="subscribe-result"

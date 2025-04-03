@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 export default function Hero1Dark() {
   return (
     <div className="container position-relative d-flex align-items-center">
@@ -13,7 +14,7 @@ export default function Hero1Dark() {
                 className="hs-title-9 mb-40 mb-sm-20 wow fadeInUp animated"
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
-                Global Marketing Consulting Agency
+                Marketing made easy with AI
               </h1>
               <p
                 className="hs-descr mb-50 mb-sm-40 wow fadeInUp animated"
@@ -24,8 +25,8 @@ export default function Hero1Dark() {
                   animationName: "fadeInUp",
                 }}
               >
-                We’re a global marketing company delivering innovative solutions
-                to our clients.
+                Vantage empowers businesses with AI-driven marketing solutions
+                that deliver measurable results and drive sustainable growth
               </p>
               <div
                 className="wow fadeInUp wch-unset animated"
@@ -39,7 +40,7 @@ export default function Hero1Dark() {
               >
                 <div className="local-scroll mb-60 mb-sm-50">
                   <a
-                    href="#contact"
+                    href="/#contact"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                   >
                     <span>Get a Consultation</span>
@@ -63,7 +64,7 @@ export default function Hero1Dark() {
                       <i className="mi-check" aria-hidden="true" />
                     </div>
                     <div className="features-list-text">
-                      Free 30 minute consultation
+                      Data-driven strategy development
                     </div>
                   </div>
                   {/* End Features List Item */}
@@ -73,7 +74,7 @@ export default function Hero1Dark() {
                       <i className="mi-check" aria-hidden="true" />
                     </div>
                     <div className="features-list-text">
-                      Free marketing report
+                      Automated campaign optimization
                     </div>
                   </div>
                   {/* End Features List Item */}
@@ -129,7 +130,7 @@ export default function Hero1Dark() {
               >
                 <div className="mt-10">
                   <a
-                    href="#services"
+                    href="/#services"
                     className="btn btn-mod btn-dark btn-with-icon btn-circle"
                   >
                     <span className="btn-icon color-3">
@@ -138,10 +139,10 @@ export default function Hero1Dark() {
                     <span data-btn-animate="y">
                       <span className="btn-animate-y">
                         <span className="btn-animate-y-1">
-                          Marketing Consulting
+                          AI Strategy Consulting
                         </span>
                         <span className="btn-animate-y-2" aria-hidden="true">
-                          Marketing Consulting
+                          AI Strategy Consulting
                         </span>
                       </span>
                     </span>
@@ -149,7 +150,7 @@ export default function Hero1Dark() {
                 </div>
                 <div className="mt-10">
                   <a
-                    href="#services"
+                    href="/#services"
                     className="btn btn-mod btn-dark btn-with-icon btn-circle"
                   >
                     <span className="btn-icon color-2">
@@ -169,7 +170,7 @@ export default function Hero1Dark() {
                 </div>
                 <div className="mt-10">
                   <a
-                    href="#services"
+                    href="/#services"
                     className="btn btn-mod btn-dark btn-with-icon btn-circle"
                   >
                     <span className="btn-icon color-4">

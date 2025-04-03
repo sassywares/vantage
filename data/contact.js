@@ -2,7 +2,7 @@ export const contactItems = [
   {
     iconClass: "mi-location",
     title: "Address",
-    text: "Envato Pty Ltd, PO Box 16122 Collins Street, West Victoria.",
+    text: "123 Main St, Anytown, USA",
     link: {
       url: "https://goo.gl/maps/7Vw1PBhxx5BaXStr8",
       text: "See Map",
@@ -13,9 +13,9 @@ export const contactItems = [
   {
     iconClass: "mi-email",
     title: "Email",
-    text: "ibthemes21@gmail.com",
+    text: "hello@vantage-marketing.pages.dev",
     link: {
-      url: "mailto:ibthemes21@gmail.com",
+      url: "mailto:hello@sassywares.com",
       text: "Say Hello",
     },
   },
@@ -24,7 +24,7 @@ export const contactItems = [
     title: "Phone",
     text: "+1 837 652 8800",
     link: {
-      url: "tel:+61383767284",
+      url: "tel:+18376528800",
       text: "Call now",
     },
   },

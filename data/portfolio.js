@@ -238,26 +238,46 @@ export const portfolios3 = [
 
 export const portfolios4 = [
   {
-    id: 25,
+    id: 1,
     imageSrc: "/assets/images/demo-corporate/portfolio/project-1.jpg",
-    title: "How Marketing Wire Support Increased Data Accuracy by 70%",
-    number: "70%",
-    description: "growth with Resonance",
+    title: "E-commerce AI Optimization",
+    number: "300%",
+    description: "ROI Increase",
   },
   {
-    id: 26,
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-2.jpg",
-    title:
-      "How Surface Mobility Increased Sales 3X During the Latest Six Months",
-    number: "3x",
-    description: "sales increased with Resonance",
+    id: 2,
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-1.jpg",
+    title: "AI-Driven Lead Generation",
+    number: "2x",
+    description: "Conversion Rate",
   },
   {
-    id: 27,
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-3.jpg",
-    title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
-    number: "Zero",
-    description: "negative reviews with Resonance",
+    id: 3,
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-1.jpg",
+    title: "Predictive Marketing Analytics",
+    number: "40%",
+    description: "Cost Reduction",
+  },
+  {
+    id: 4,
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-1.jpg",
+    title: "AI Content Optimization",
+    number: "85%",
+    description: "Engagement Boost",
+  },
+  {
+    id: 5,
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-1.jpg",
+    title: "Smart Social Media Strategy",
+    number: "5x",
+    description: "Social ROI",
+  },
+  {
+    id: 6,
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-1.jpg",
+    title: "AI Customer Segmentation",
+    number: "50%",
+    description: "Better Targeting",
   },
 ];
 

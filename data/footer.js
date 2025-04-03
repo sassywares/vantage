@@ -5,10 +5,8 @@ export const footerLinks = [
 ];
 
 export const footerLinks2 = [
-  { text: "Privacy Policy", href: "#" },
-  { text: "Terms & Conditions", href: "#" },
-  { text: "Presskit", href: "#" },
-  { text: "Credits", href: "#" },
+  { text: "Privacy Policy", href: "/privacy-policy" },
+  { text: "Terms & Conditions", href: "/terms-and-conditions" },
 ];
 
 export const socialLinks = [
@@ -49,9 +47,8 @@ export const socialMediaLinks = [
 ];
 
 export const navigationLinks = [
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#portfolio", text: "Portfolio" },
-  { href: "#blog", text: "Blog" },
-  { href: "#contact", text: "Contact" },
+  { href: "/#about", text: "About" },
+  { href: "/#services", text: "Services" },
+  { href: "/#portfolio", text: "Portfolio" },
+  { href: "/#contact", text: "Contact" },
 ];

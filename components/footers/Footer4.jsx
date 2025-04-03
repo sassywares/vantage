@@ -31,14 +31,14 @@ export default function Footer4() {
         <div className="row">
           <div className="col-lg-6 mb-md-60">
             <h2 className="section-title mb-60 mb-sm-40">
-              Ready to get started with Resonance Template?
+              Ready to transform your marketing with AI?
             </h2>
             <div className="local-scroll">
               <a
                 href="#contact"
                 className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
               >
-                <span>Get a Consultation</span>
+                <span>Get AI Analysis</span>
               </a>
             </div>
           </div>
@@ -69,11 +69,11 @@ export default function Footer4() {
       {/* Footer Text */}
       <div className="row">
         <div className="col-md-6 mb-sm-40">
-          Made with love for great people. <br />© IB-Themes{" "}
-          {new Date().getFullYear()}.
+          Empowering businesses with AI-driven marketing. <br />© Vantage{" "}
+          {new Date().getFullYear()}
         </div>
         {/* Social Links */}
-        <div className="col-md-6 footer-2-social-links text-md-end mb-md-40">
+        {/* <div className="col-md-6 footer-2-social-links text-md-end mb-md-40">
           {socialMediaLinks.map((elm, i) => (
             <React.Fragment key={i}>
               <a
@@ -87,7 +87,7 @@ export default function Footer4() {
               </a>{" "}
             </React.Fragment>
           ))}
-        </div>
+        </div> */}
         {/* End Social Links */}
       </div>
       {/* End Footer Text */}

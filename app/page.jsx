@@ -5,13 +5,11 @@ import Hero1Dark from "@/components/homes/home-4/heros/Hero1Dark";
 import { corporateOnepage } from "@/data/menu";
 
 export const metadata = {
-  title:
-    "Home 4 Main Demo Onepage Dark || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Vantage Marketing",
+  description: "Empowering businesses with AI-driven marketing.",
 };
 
-export default function Home4MainDemoOnepageDark() {
+export default function HomePage() {
   return (
     <>
       <div className="theme-corporate">

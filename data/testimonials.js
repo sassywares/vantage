@@ -96,22 +96,22 @@ export const testimonials4 = [
     id: 1,
     delay: "0s",
     stars: 4.5,
-    text: "“Really impressed with the service and the results!”",
-    caption: "Rated 4.5 on Trustpilot",
+    text: "The AI insights transformed our marketing strategy!",
+    caption: "Rated 4.5 on G2",
   },
   {
     id: 2,
     delay: "0.15s",
     stars: 4.5,
-    text: "“Excellent service for targeted lead generation.”",
-    caption: "Rated 4.5 on Trustpilot",
+    text: "Their AI tools doubled our conversion rates in 3 months.",
+    caption: "Rated 4.5 on Clutch",
   },
   {
     id: 3,
     delay: "0.3s",
     stars: 4.5,
-    text: "“I have super enjoyed working with Resonance.”",
-    caption: "Rated 4.5 on Trustpilot",
+    text: "Vantage's AI analytics gave us a competitive edge.",
+    caption: "Rated 4.5 on Capterra",
   },
 ];
 
@@ -119,16 +119,16 @@ export const testimonialItems = [
   {
     imageSrc: "/assets/images/demo-corporate/testimonial-1.jpg",
     quote:
-      "This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is the absolute best I've ever had the pleasure of interacting with. Quick, courteous, premium and extremely helpful!",
-    author: "Adam Peterson",
-    position: "Marketing Consultant",
+      "The AI-powered analytics transformed our entire marketing approach. We saw a 300% increase in ROI within the first quarter. The predictive insights helped us stay ahead of market trends and target the right customers at exactly the right time.",
+    author: "Sarah Chen",
+    position: "Director of Digital Marketing, TechFlow",
   },
   {
     imageSrc: "/assets/images/demo-corporate/testimonial-2.jpg",
     quote:
-      "Optimization and structure are very good for SEO basics. A remarkable model, everything has been thought out with talent, the design, the various adaptations. Beautiful template, nice code and easy to customize.",
-    author: "Jordan Harvey",
-    position: "SEO/SMO Expert",
+      "Vantage's AI tools automated our campaign optimization and doubled our conversion rates. The machine learning algorithms continuously improve our targeting, and the real-time analytics give us unprecedented visibility into campaign performance.",
+    author: "Michael Rodriguez",
+    position: "CMO, GrowthWave Solutions",
   },
 ];
 

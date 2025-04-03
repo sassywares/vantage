@@ -1,61 +1,67 @@
 "use client";
-import { contactItems } from "@/data/contact";
+
+import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+
 export default function Contact() {
+  async function onFormSubmit(e) {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    if (!name) {
+      alert("Please enter your name");
+      return;
+    }
+
+    if (!email) {
+      alert("Please enter your email");
+      return;
+    }
+
+    if (!message) {
+      alert("Please enter your message");
+      return;
+    }
+
+    alert(
+      "Thank you for reaching out, a member of our team will get back to you soon."
+    );
+
+    try {
+      await fetch("https://api.sassywares.com/v1/contact", {
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+        method: "POST",
+        headers: {
+          "X-Source": "vantage-marketing-agency",
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <>
-      <div className="row wow fadeInUp">
-        {/* Left Column */}
-        <div className="col-lg-5 mb-md-50 mb-sm-30 d-flex align-items-strech">
-          <div
-            className="bg-color-primary-1 bg-color-alpha-90 bg-image bg-scroll light-content w-100 round overflow-hidden px-4 px-sm-5 py-5"
-            style={{
-              backgroundImage:
-                "url(/assets/images/demo-corporate/section-bg-4.jpg)",
-            }}
-          >
-            {/* Address */}
-            {contactItems.map((item, index) => (
-              <React.Fragment key={index}>
-                <div
-                  className={`contact-item ${
-                    index !== 3 ? "mb-40 mb-sm-20" : ""
-                  }`}
-                >
-                  <div className="ci-icon">
-                    <i className={item.iconClass} />
-                  </div>
-                  <h4 className="ci-title">{item.title}</h4>
-                  <div className="ci-text large">{item.text}</div>
-                  <div className="ci-link">
-                    <a
-                      href={item.link.url}
-                      target={item.link.target}
-                      rel={item.link.rel}
-                    >
-                      {item.link.text}
-                    </a>
-                  </div>
-                </div>{" "}
-                {index !== contactItems.length - 1 && (
-                  <hr className="mt-0 mb-40 mb-sm-20 opacity-02" />
-                )}
-              </React.Fragment>
-            ))}
-            {/* End Phone */}
-          </div>
-        </div>
-        {/* End Left Column */}
+      <div className="row wow fadeInUp justify-content-center">
         {/* Right Column */}
-        <div className="col-lg-7 d-flex align-items-strech">
+        <div className="col col-lg-8 d-flex align-items-strech">
           <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
             <h3 className="section-title-small mt-n10 mb-40 mb-sm-30">
               We'd love to hear from you
             </h3>
             {/* Contact Form */}
             <form
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={onFormSubmit}
               className="form contact-form"
               id="contact_form"
             >
@@ -113,8 +119,11 @@ export default function Contact() {
                   <div className="form-tip w-100 pt-3">
                     <i className="icon-info size-16" />
                     All the fields are required. By sending the form you agree
-                    to the <a href="#">Terms &amp; Conditions</a> and{" "}
-                    <a href="#">Privacy Policy</a>.
+                    to the{" "}
+                    <Link href="/terms-and-conditions">
+                      Terms &amp; Conditions
+                    </Link>{" "}
+                    and <Link href="/privacy-policy">Privacy Policy</Link>.
                   </div>
                   {/* End Inform Tip */}
                 </div>
@@ -122,9 +131,9 @@ export default function Contact() {
                   {/* Send Button */}
                   <div className="pt-3 text-md-end">
                     <button
+                      id="submit_btn"
                       type="submit"
                       className="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim"
-                      id="submit_btn"
                       aria-controls="result"
                     >
                       <span>Send Message</span>

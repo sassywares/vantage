@@ -13,6 +13,7 @@ import AnimateButton from "@/components/common/AnimateButton";
 import Link from "next/link";
 import Testimonials2 from "./Testimonials2";
 import Image from "next/image";
+
 export default function Home4({ onePage = false, dark = false }) {
   return (
     <>
@@ -38,14 +39,16 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row mb-70 mb-sm-50">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                High-rated Online Marketing Agency Based in New York
+                The Leading AI-Powered Digital Marketing Agency
               </h2>
               <p className="section-descr dark-white mb-0">
-                Marketing is the activity, set of institutions, and processes
-                for creating, communicating, delivering, and exchanging
-                offerings that have value for customers partners, and society at
-                large. However, the definition of marketing has evolved over the
-                years.
+                Vantage combines cutting-edge artificial intelligence with
+                proven marketing strategies to deliver exceptional results. Our
+                AI-driven approach helps businesses optimize their digital
+                presence, automate campaigns, and make data-backed decisions
+                that drive measurable growth. We leverage machine learning and
+                predictive analytics to maximize ROI across all marketing
+                channels.
               </p>
             </div>
           </div>
@@ -106,12 +109,13 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row">
             <div className="col-md-7 col-lg-6 col-xl-5">
               <h2 className="section-title mb-40 mb-xs-30">
-                Get <span className="mark-decoration-5">free</span> marketing
-                consultation online
+                Get an AI-powered{" "}
+                <span className="mark-decoration-5">marketing analysis</span>{" "}
+                for free
               </h2>
               <p className="section-descr mb-50 mb-sm-40">
-                Contact us and get free marketing consultation for your
-                business.
+                Let our AI analyze your marketing performance and discover
+                untapped opportunities for growth.
               </p>
               <div className="local-scroll mb-70 mb-sm-50">
                 {onePage ? (
@@ -120,7 +124,7 @@ export default function Home4({ onePage = false, dark = false }) {
                       href="#contact"
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
-                      <span>Get a Consultation</span>
+                      <span>Get Your Free Analysis</span>
                     </a>
                   </>
                 ) : (
@@ -129,7 +133,7 @@ export default function Home4({ onePage = false, dark = false }) {
                       href={`/corporate-contact${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
-                      <span>Get a Consultation</span>
+                      <span>Get Your Free Analysis</span>
                     </Link>
                   </>
                 )}
@@ -151,11 +155,12 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row mb-70 mb-sm-50">
             <div className="col-md-8 offset-md-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                Providing the Best Marketing Solutions for Our Clients
+                AI-Powered Marketing Solutions That Drive Results
               </h2>
               <p className="section-descr mb-0">
-                The marketing mix represents the basic tools that marketers can
-                use to bring their products or services to the market.
+                Our suite of AI-driven marketing tools helps businesses
+                automate, optimize, and scale their marketing efforts with
+                data-backed precision.
               </p>
             </div>
           </div>
@@ -175,8 +180,9 @@ export default function Home4({ onePage = false, dark = false }) {
                 />
               </div>
               <p className="section-descr-medium mb-50 mb-sm-40">
-                Looking for exclusive marketing services? Contact us and get
-                free online consultation for your brand or your client's brand.
+                Ready to harness the power of AI for your marketing? Get a free
+                analysis of your current marketing performance and discover your
+                growth potential.
               </p>
               <div className="local-scroll text-center">
                 {onePage ? (
@@ -191,7 +197,7 @@ export default function Home4({ onePage = false, dark = false }) {
                         <i className="mi-heart" />
                       </span>
                       <span data-btn-animate="y">
-                        <AnimateButton text={"Get Free Consultation"} />
+                        <AnimateButton text={"Get AI Marketing Analysis"} />
                       </span>
                     </a>
                   </>
@@ -207,7 +213,7 @@ export default function Home4({ onePage = false, dark = false }) {
                         <i className="mi-heart" />
                       </span>
                       <span data-btn-animate="y">
-                        <AnimateButton text={"Get Free Consultation"} />
+                        <AnimateButton text={"Get AI Marketing Analysis"} />
                       </span>
                     </Link>
                   </>
@@ -249,7 +255,7 @@ export default function Home4({ onePage = false, dark = false }) {
                     <i className="mi-link-alt" />
                   </span>
                   <span data-btn-animate="y">
-                    <AnimateButton text={"Read Clients Stories"} />
+                    <AnimateButton text={"Read Client Stories"} />
                   </span>
                 </a>
               </>
@@ -307,12 +313,12 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row">
             <div className="col-md-7 offset-md-5 col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
               <h2 className="section-title mb-40 mb-xs-30">
-                Marketing <span className="mark-decoration-5">Jumpstart</span>{" "}
-                for Your Business
+                AI-Powered <span className="mark-decoration-5">Jumpstart</span>{" "}
+                for you
               </h2>
               <p className="section-descr mb-50 mb-sm-40">
-                The marketing audit is generally conducted by a third person,
-                not a member of an organization.
+                Transform your marketing with AI-driven insights and automated
+                optimization that delivers measurable results.
               </p>
               <div className="local-scroll mb-70 mb-sm-50">
                 {onePage ? (
@@ -322,7 +328,7 @@ export default function Home4({ onePage = false, dark = false }) {
                       href="#contact"
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
-                      <span>Get a Consultation</span>
+                      <span>Get AI Analysis</span>
                     </a>
                   </>
                 ) : (
@@ -332,7 +338,7 @@ export default function Home4({ onePage = false, dark = false }) {
                       href={`/corporate-contact${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
-                      <span>Get a Consultation</span>
+                      <span>Get AI Analysis</span>
                     </Link>
                   </>
                 )}
@@ -344,7 +350,7 @@ export default function Home4({ onePage = false, dark = false }) {
           </div>
         </div>
       </section>
-      <section
+      {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
@@ -386,7 +392,7 @@ export default function Home4({ onePage = false, dark = false }) {
             <Blog />
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="container">
         <div
           className={`page-section px-4 px-md-0 ${
@@ -420,11 +426,12 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row mb-80 mb-sm-60">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                Let’s have a conversation
+                Start Your AI Marketing Journey
               </h2>
               <p className="section-descr dark-white mb-0">
-                We’re open to talking to good people. Just say hello, and we’ll
-                start productive cooperation. Start your own success story.
+                Ready to transform your marketing with AI? Let's discuss how our
+                AI-powered solutions can drive growth for your business. Your
+                success story starts here.
               </p>
             </div>
           </div>{" "}

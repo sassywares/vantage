@@ -80,19 +80,27 @@ export const features = [
 export const features2 = [
   {
     id: 1,
-    text: "Business to business",
+    text: "AI-driven ROI",
   },
   {
     id: 2,
-    text: "Non-profit business",
+    text: "Machine learning",
   },
   {
     id: 3,
-    text: "Business to customer",
+    text: "Real-time performance",
   },
   {
     id: 4,
-    text: "Ecommerce",
+    text: "Automated campaigns",
+  },
+  {
+    id: 5,
+    text: "Data-backed decisions",
+  },
+  {
+    id: 6,
+    text: "AI-powered insights",
   },
 ];
 
