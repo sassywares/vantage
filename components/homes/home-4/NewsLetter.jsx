@@ -20,7 +20,7 @@ export default function NewsLetter() {
     );
 
     try {
-      await fetch("https://api.sassywares.com/v1/newsletter", {
+      await fetch("https://api.sassywares.com/newsletter", {
         body: JSON.stringify({ email }),
         method: "POST",
         headers: {

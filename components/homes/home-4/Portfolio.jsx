@@ -8,10 +8,10 @@ export default function Portfolio() {
     <>
       <div className="row mb-70 mb-sm-50">
         <div className="col-lg-6 col-xl-5 mb-md-40">
-          <h2 className="section-title mb-40 mb-xs-30">Case Studies</h2>
+          <h2 className="section-title mb-40 mb-xs-30">Services</h2>
           <p className="section-descr dark-white mb-0">
-            See how our AI-powered solutions deliver measurable results for
-            leading brands.
+            See how our AI-powered solutions can deliver measurable results for
+            your business.
           </p>
         </div>
         <div className="col-lg-6 offset-xl-1 d-flex align-items-end pb-10">
@@ -27,8 +27,6 @@ export default function Portfolio() {
               </div>
             ))}
             {/* End Features List Item */}
-
-            {/* End Features List Item */}
           </div>
           {/* End Features List */}
         </div>
@@ -38,10 +36,7 @@ export default function Portfolio() {
         {/* Portfolio Item */}
         {portfolios4.map((item, index) => (
           <div key={index} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
-            <Link
-              href={`/corporate-portfolio-single/${item.id}`}
-              className="portfolio-5-link"
-            >
+            <div className="portfolio-5-link">
               <div className="portfolio-5-image">
                 <div className="portfolio-5-image-bg wow scalexIn" />
                 <div className="wow fadeIn" data-wow-delay="1s">
@@ -50,6 +45,7 @@ export default function Portfolio() {
                     width={660}
                     height={472}
                     alt="Portfolio Image"
+                    style={{ transform: "scale(1.01)" }}
                   />
                 </div>
               </div>
@@ -58,7 +54,7 @@ export default function Portfolio() {
               </h3>
               <div className="portfolio-5-number">{item.number}</div>
               <div className="portfolio-5-number-descr">{item.description}</div>
-            </Link>
+            </div>
           </div>
         ))}
         {/* End Portfolio Item */}

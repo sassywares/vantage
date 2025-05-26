@@ -13,14 +13,14 @@ export default function Header4({ links }) {
       <div className="nav-logo-wrap position-static local-scroll">
         <a href="/#top" className="logo">
           <Image
-            src="/assets/images/demo-corporate/logo-dark.svg"
+            src="/assets/images/logo.png"
             alt="Vantage Marketing Logo"
             width={106}
             height={36}
             className="light-mode-logo"
           />
           <Image
-            src="/assets/images/demo-corporate/logo-white.svg"
+            src="/assets/images/logo.png"
             alt="Vantage Marketing Logo"
             width={106}
             height={36}

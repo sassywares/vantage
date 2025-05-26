@@ -95,8 +95,7 @@ export default function Home4({ onePage = false, dark = false }) {
       <section
         className="page-section bg-scroll light-content"
         style={{
-          backgroundImage:
-            "url(/assets/images/demo-corporate/section-bg-1.jpg)",
+          backgroundImage: "url(/assets/images/covers/marketing-analysis.jpg)",
         }}
       >
         {/* Desktop Overlay */}
@@ -241,49 +240,12 @@ export default function Home4({ onePage = false, dark = false }) {
       >
         <div className="container position-relative">
           <Portfolio />
-          {/* End Portfolio Grid */}
-          <div className="local-scroll text-center">
-            {onePage ? (
-              <>
-                <a
-                  href="#clients-stories"
-                  className={`btn btn-mod ${
-                    dark ? "btn-dark" : "btn-w"
-                  } btn-with-icon btn-circle`}
-                >
-                  <span className="btn-icon color-3">
-                    <i className="mi-link-alt" />
-                  </span>
-                  <span data-btn-animate="y">
-                    <AnimateButton text={"Read Client Stories"} />
-                  </span>
-                </a>
-              </>
-            ) : (
-              <>
-                <Link
-                  href={`/corporate-portfolio${dark ? "-dark" : ""}`}
-                  className={`btn btn-mod ${
-                    dark ? "btn-dark" : "btn-w"
-                  } btn-with-icon btn-circle`}
-                >
-                  <span className="btn-icon color-3">
-                    <i className="mi-link-alt" />
-                  </span>
-                  <span data-btn-animate="y">
-                    <AnimateButton text={"Read All Case Studies"} />
-                  </span>
-                </Link>
-              </>
-            )}
-          </div>
         </div>
       </section>
       <section
         className="page-section bg-primary-1 bg-color-alpha-90 bg-scroll light-content"
         style={{
-          backgroundImage:
-            "url(/assets/images/demo-corporate/section-bg-2.jpg)",
+          backgroundImage: "url(/assets/images/covers/marketing-process.jpg)",
         }}
       >
         <Steps />
@@ -299,8 +261,7 @@ export default function Home4({ onePage = false, dark = false }) {
       <section
         className="page-section bg-scroll light-content"
         style={{
-          backgroundImage:
-            "url(/assets/images/demo-corporate/section-bg-3.jpg)",
+          backgroundImage: "url(/assets/images/covers/jumpstart.jpg)",
         }}
       >
         {/* Desktop Overlay */}

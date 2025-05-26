@@ -117,14 +117,14 @@ export const testimonials4 = [
 
 export const testimonialItems = [
   {
-    imageSrc: "/assets/images/demo-corporate/testimonial-1.jpg",
+    imageSrc: "/assets/images/testimonials/sarah-chen.jpg",
     quote:
       "The AI-powered analytics transformed our entire marketing approach. We saw a 300% increase in ROI within the first quarter. The predictive insights helped us stay ahead of market trends and target the right customers at exactly the right time.",
     author: "Sarah Chen",
     position: "Director of Digital Marketing, TechFlow",
   },
   {
-    imageSrc: "/assets/images/demo-corporate/testimonial-2.jpg",
+    imageSrc: "/assets/images/testimonials/michael-rodriquez.jpg",
     quote:
       "Vantage's AI tools automated our campaign optimization and doubled our conversion rates. The machine learning algorithms continuously improve our targeting, and the real-time analytics give us unprecedented visibility into campaign performance.",
     author: "Michael Rodriguez",

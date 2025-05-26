@@ -33,7 +33,7 @@ export default function Contact() {
     );
 
     try {
-      await fetch("https://api.sassywares.com/v1/contact", {
+      await fetch("https://api.sassywares.com/contact", {
         body: JSON.stringify({
           name,
           email,
