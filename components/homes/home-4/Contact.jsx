@@ -1,5 +1,6 @@
 "use client";
 
+import { config } from "@/config";
 import Link from "next/link";
 import React from "react";
 
@@ -33,18 +34,20 @@ export default function Contact() {
     );
 
     try {
-      await fetch("https://api.sassywares.com/contact", {
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-        method: "POST",
-        headers: {
-          "X-Source": "vantage-marketing-agency",
-          "Content-Type": "application/json",
-        },
-      });
+      await fetch(
+        `https://api.sassywares.com/contact?referrerId=${config.id}&formTypeId=${config.formTypeIds.contactForm}`,
+        {
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+          }),
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
     } catch (error) {
       console.error(error);
     }

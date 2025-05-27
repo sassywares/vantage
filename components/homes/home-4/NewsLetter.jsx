@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { config } from "@/config";
 
 export default function NewsLetter() {
   async function onFormSubmit(e) {
@@ -20,14 +21,16 @@ export default function NewsLetter() {
     );
 
     try {
-      await fetch("https://api.sassywares.com/newsletter", {
-        body: JSON.stringify({ email }),
-        method: "POST",
-        headers: {
-          "X-Source": "vantage-marketing-agency",
-          "Content-Type": "application/json",
-        },
-      });
+      await fetch(
+        `https://api.sassywares.com/newsletter?referrerId=${config.id}&formTypeId=${config.formTypeIds.newsletterForm}`,
+        {
+          body: JSON.stringify({ email }),
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
     } catch (error) {
       console.error(error);
     }
