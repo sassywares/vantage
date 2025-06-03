@@ -67,10 +67,23 @@ export default function Footer4() {
         </div>
       </div>
       {/* Footer Text */}
-      <div className="row">
+      <div className="row align-items-end">
         <div className="col-md-6 mb-sm-40">
           Empowering businesses with AI-driven marketing. <br />© Vantage{" "}
           {new Date().getFullYear()}
+        </div>
+        <div className="col-md-6 mt-4 mt-md-0">
+          <div className="d-flex gap-2 align-items-center justify-content-end">
+            Site by
+            <a href="https://sassywares.com" target="_blank" rel="noopener">
+              <img
+                src="https://storage.sassywares.com/badge.png"
+                alt="sassywares creative web design development agency"
+                width="150"
+                className="mt-2"
+              />
+            </a>
+          </div>
         </div>
         {/* Social Links */}
         {/* <div className="col-md-6 footer-2-social-links text-md-end mb-md-40">
